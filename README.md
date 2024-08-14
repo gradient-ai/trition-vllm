@@ -34,7 +34,8 @@ If you already have a working machine, you may skip this step and just use a wor
 
 
 ## Setup script on A6000x4 machine
-In this step, you will run the setup script to install the required drivers
+In this step, you will run the setup script to install the required drivers.
+**Note**: If you have a baremetal H100x8 machines or have [ML-In-A-Box Ubuntu 22](https://github.com/Paperspace/ml-in-a-box/tree/main/ubuntu-22), **do not** run this script but rather proceed to the last step f starting the tritonserver in this section.
 - ssh into your A6000x4 machine
 - Download `setup.sh` from GitHub and run the setup script. Note that, the script run expected to take roughly 20-30 minutes. The script may prompt you to restart process through a purple screen, hit "Enter" and continue or else it will stuck. Note: If you're running baremetal machines from Paperspace, do not run the setup.sh as it will cause a mismatch of driver between the host and the container. 
 - After the script run is completed, it will automatically restart the machine. Wait for a few minutes and you can then ssh again into the machine.
